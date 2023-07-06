@@ -1,0 +1,9 @@
+Usage: main [OPTIONS] NUMBER
+
+  Calculate pi using Monte Carlo estimation.
+
+  NUMBER is the number of random points.
+
+Options:
+  --version  Show the version and exit.
+  --help     Show this message and exit.
