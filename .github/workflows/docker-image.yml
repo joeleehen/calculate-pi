@@ -9,7 +9,7 @@ on:
 
 jobs:
 
-  build-utrc-reports:
+  build-calculate-pi:
     runs-on: ubuntu-latest
 
     steps:
