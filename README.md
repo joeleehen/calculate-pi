@@ -1,1 +1,1 @@
-# Calculate PI poetry project demo
+# Calculate Pi python poetry project demo
