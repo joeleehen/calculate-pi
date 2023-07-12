@@ -1,4 +1,4 @@
-Calculate Pi
+Calculate PI
 ============
 
 A python poetry project demo.
