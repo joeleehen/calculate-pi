@@ -1,7 +1,7 @@
 Calculate PI
 ============
 
-A python poetry project demo.
+A python poetry project demo for calculating PI.
 
 Installation
 ------------
