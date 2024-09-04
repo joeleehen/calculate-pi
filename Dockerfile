@@ -9,8 +9,7 @@ COPY pyproject.toml poetry.lock ./
 
 RUN poetry export -f requirements.txt --output requirements.txt --without-hashes
 
-COPY README.md \
-     /calculate_pi/
+COPY README.md LICENSE.txt /calculate_pi/
 COPY calculate_pi /calculate_pi/calculate_pi/
 
 RUN poetry build
@@ -42,7 +41,6 @@ COPY --from=poetry /calculate_pi/dist/*.whl ./
 
 RUN pip install *.whl
 
-COPY README.md \
-     /calculate_pi/
+COPY README.md LICENSE.txt /calculate_pi/
 
 CMD [ "calculate-pi", "--help" ]
