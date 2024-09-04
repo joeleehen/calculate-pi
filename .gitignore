@@ -1,5 +1,8 @@
-# Created by https://www.toptal.com/developers/gitignore/api/macos,linux,python
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,linux,python
+# Created by https://www.toptal.com/developers/gitignore/api/macos,linux,python,visualstudiocode,asdf
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,linux,python,visualstudiocode,asdf
+
+### asdf ###
+.tool-versions
 
 ### Linux ###
 *~
@@ -220,4 +223,18 @@ poetry.toml
 # LSP config files
 pyrightconfig.json
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,linux,python
+### VisualStudioCode ###
+.vscode
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+# End of https://www.toptal.com/developers/gitignore/api/macos,linux,python,visualstudiocode,asdf

@@ -1,5 +1,5 @@
-FROM python:3.9.17-bookworm as poetry
-ENV POETRY_VERSION = "1.5.1" 
+FROM python:3.11.9-bookworm AS poetry
+ENV POETRY_VERSION="1.8.3" 
 
 RUN pip install "poetry==${POETRY_VERSION}"
 
@@ -16,7 +16,7 @@ COPY calculate_pi /calculate_pi/calculate_pi/
 RUN poetry build
 
 
-FROM python:3.9.17-bookworm
+FROM python:3.11.9-bookworm
 LABEL maintainer="Erik Ferlanti <eferlanti@tacc.utexas.edu>"
 
 # Update OS
