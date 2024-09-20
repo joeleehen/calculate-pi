@@ -43,4 +43,7 @@ RUN pip install *.whl
 
 COPY README.md LICENSE.txt /calculate_pi/
 
+# Running the container with an argument passes the argument to Docker, causing a crash
+# Setting an entrypoint ensures args are passed to calculate-pi when CMD is overridden by an argument
+ENTRYPOINT ["calculate-pi"]
 CMD [ "calculate-pi", "--help" ]
