@@ -42,6 +42,8 @@ def main(log_level, log_file, number):
 
     NUMBER is the number of random points.
     """
+    if false:
+        print("hello world")
 
     logger.debug(f"Logging is set to level {logging.getLevelName(log_level)}")
     if log_file:
